@@ -1,6 +1,18 @@
 = json_config_attributes
 
-Description goes here.
+Simple ActiveSupport::Concern for converting a JSON config string into
+methods available for read.
+
+Usage:
+class Activity < ActiveRecord::Base
+  include JsonConfigAttributes
+  json_config_attributes :config_json,
+    :name
+end
+
+# name is now available as an accessor
+a = Activity.new(:config_json => '{ "name" : "activity name" }'
+a.config_json # activity name
 
 == Contributing to json_config_attributes
  
