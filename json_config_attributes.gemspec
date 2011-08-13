@@ -10,7 +10,7 @@ Gem::Specification.new do |s|
   s.required_rubygems_version = Gem::Requirement.new(">= 0") if s.respond_to? :required_rubygems_version=
   s.authors = ["rangsikitpho"]
   s.date = %q{2011-08-12}
-  s.description = %q{TODO: longer description of your gem}
+  s.description = %q{Simple ActiveSupport::Concern for converting a JSON config string into methods available for read.}
   s.email = %q{rangsikitpho@gmail.com}
   s.extra_rdoc_files = [
     "LICENSE.txt",
@@ -35,7 +35,7 @@ Gem::Specification.new do |s|
   s.licenses = ["MIT"]
   s.require_paths = ["lib"]
   s.rubygems_version = %q{1.4.2}
-  s.summary = %q{TODO: one-line summary of your gem}
+  s.summary = %q{JSON config attribute helper}
 
   if s.respond_to? :specification_version then
     s.specification_version = 3
