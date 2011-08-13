@@ -3,7 +3,13 @@
 Simple ActiveSupport::Concern for converting a JSON config string into
 methods available for read.
 
-Usage:
+## Install
+  gem 'json_config_attributes'
+  bundle
+
+## Usage
+
+```ruby
 class Activity < ActiveRecord::Base
   include JsonConfigAttributes
   json_config_attributes :config_json,
@@ -12,7 +18,14 @@ end
 
 # name is now available as an accessor
 a = Activity.new(:config_json => '{ "name" : "activity name" }'
-a.config_json # activity name
+a.config_json
+=> "activity name"
+````
+
+## TODO
+Add write support to update config json by modifying attributes directly.
+
+Possibly memoize parsed JSON.
 
 == Contributing to json_config_attributes
  
@@ -26,6 +39,6 @@ a.config_json # activity name
 
 == Copyright
 
-Copyright (c) 2011 rangsikitpho. See LICENSE.txt for
+Copyright (c) 2011 Joshua Rangsikitpho, SocialVibe. See LICENSE.txt for
 further details.
 
