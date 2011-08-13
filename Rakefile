@@ -17,8 +17,8 @@ Jeweler::Tasks.new do |gem|
   gem.name = "json_config_attributes"
   gem.homepage = "http://github.com/rangsikitpho/json_config_attributes"
   gem.license = "MIT"
-  gem.summary = %Q{TODO: one-line summary of your gem}
-  gem.description = %Q{TODO: longer description of your gem}
+  gem.summary = %Q{JSON config attribute helper}
+  gem.description = %Q{Simple ActiveSupport::Concern for converting a JSON config string into methods available for read.}
   gem.email = "rangsikitpho@gmail.com"
   gem.authors = ["rangsikitpho"]
   # dependencies defined in Gemfile
