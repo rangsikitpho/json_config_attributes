@@ -25,6 +25,7 @@ Gem::Specification.new do |s|
     "README.md",
     "Rakefile",
     "VERSION",
+    "json_config_attributes.gemspec",
     "lib/json_config_attributes.rb",
     "spec/json_config_attributes_spec.rb",
     "spec/spec_helper.rb",
