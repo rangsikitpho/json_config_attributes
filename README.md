@@ -17,8 +17,8 @@ class Activity < ActiveRecord::Base
 end
 
 # name is now available as an accessor
-a = Activity.new(:config_json => '{ "name" : "activity name" }'
-a.config_json
+a = Activity.new(:config_json => '{ "name" : "activity name" }')
+a.name
 => "activity name"
 ````
 
